@@ -459,7 +459,7 @@ public class Sceen{
                 ForceEnd = true;
                 Console.WriteLine("♦ YOU WON ♦");
                 user.GetStats().AddEXP(stage.GetReward().GetEXP());
-                user.GetCurrency().Add("✉ Gold",stage.GetReward().GetGold());
+                user.GetCurrency().Add("Gold",stage.GetReward().GetGold());
                 SelectEndGameOption(user,master,stage,party,"ลองเล่นด่านนี้สิ!");
             } else if (user.GetHP() <= 0) { // You Lose
                 ForceEnd = true;
